@@ -1,0 +1,127 @@
+:root {
+  --gray-background: hsl(0, 0%, 75%);
+  --gray-light: hsl(0, 0%, 45%);
+  --gray-medium: hsl(0, 0%, 30%);
+  --gray-dark: hsla(0, 0%, 0%, 0.6);
+}
+
+body {
+  background-color: var(--gray-background);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500; 
+  padding: 20px;
+}
+
+#application {
+  border: 5px solid var(--gray-medium);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px var(--gray-dark);
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#title {
+  padding: 20px;  
+}
+
+#title h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#title p {
+  padding: 0 20px;
+}
+
+#line {
+  border: 2.5px solid var(--gray-medium);
+  border-radius: 2px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+#input-field {
+  padding: 20px;
+}
+
+input[type='text'] {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+label {
+  padding: 0.5rem;
+}
+#text-box {
+  height: 2rem;
+  margin: 2rem 0 2.5rem 0;
+  border: 2px solid var(--gray-medium);
+  width: 75%;
+  border-radius: 8px;
+}
+
+button {
+  height: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgb(200, 200, 200);
+  background-color: var(--gray-medium);
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: var(--gray-light);
+  cursor: pointer;
+}
+
+#result {
+  padding: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+  #application {
+    width: 90%; 
+  }
+
+  #title h1 {
+    font-size: 2rem; 
+  }
+
+  #title p {
+    font-size: 1.2rem; 
+  }
+
+  input[type='text'] {
+    font-size: 1.2rem; 
+  }
+
+  label {
+    font-size: 1.2rem; 
+  }
+
+  button {
+    width: 75%; 
+    font-size: 1.2rem; 
+  }
+}
