@@ -17,7 +17,9 @@ A palindrome is a word, phrase, number, or other sequence of characters that rea
 
 HTML5<br />
 CSS3<br />
-JavaScript
+JavaScript<br />
+Regular Expressions (Regex)<br />
+Regular expressions are utilized in JavaScript to filter and manipulate strings, enabling the application to accurately identify and validate palindromes.
 
 **STYLING**
 
